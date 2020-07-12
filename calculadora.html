@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/estiloCalculadora.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet"> <link rel="icon" href="media/icono.png" type="image/png">
+	
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+</head>
+<body>
+	
+	<header>
+		<h1 id="tituloPrincipal">MI CALCULADORA</h1>
+	</header>
+	<main>
+		<div id="hola">
+			<input type="text" value="0"  id="pantalla" >
+		</div>
+
+		<div id="bloqueNumeros">
+			<button id="7" onclick="mostrar(7)">7</button>
+			<button id="8"  onclick="mostrar(8)">8</button>
+			<button id="9" onclick="mostrar(9)">9</button>
+			<button id="dividir" onclick="mostrar('/')">/</button>
+			<button id="4" onclick="mostrar(4)">4</button>
+			<button id="5" onclick="mostrar(5)">5</button>
+			<button id="6" onclick="mostrar(6)">6</button>
+			<button id="multiplicar" onclick="mostrar('*')">*</button>
+			<button id="1" onclick="mostrar(1)">1</button>
+			<button id="2" onclick="mostrar(2)">2</button>
+			<button id="3" onclick="mostrar(3)">3</button>
+			<button id="restar" onclick="mostrar('-')">-</button>
+			<button id="0" onclick="mostrar(0)">0</button>
+			<button id="sumar" onclick="mostrar('+')">+</button>
+			<button id="resetear" onclick="resetear()">AC</button>
+			<button onclick="resultado()">=</button>
+			<button id="decimal" onclick="mostrar('.')">.</button>
+			<button id="invertir" onclick="invertir()">+-</button>
+			<button id="memoria" onclick="memoria()">M+</button>
+			<button onclick="borrarMemoria()">Cl</button>
+			
+		</div>
+		
+	</main>
+	<script type="text/javascript" src="js/actividad.js"></script>
+</body>
+</html>

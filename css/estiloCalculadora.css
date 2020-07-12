@@ -1,0 +1,128 @@
+body{
+	background-image: linear-gradient(to right,#0758FD,#7CCAFB,#D5EFF8);
+	
+}
+@font-face{
+	font-family: "titulo";
+	src: url(../fonts/Inner_City.ttf);
+}
+#tituloPrincipal{
+	background: linear-gradient(to right,#F70A0A,#F99393);
+	border: 2px solid black;
+	border-radius: 20px;
+	text-align: center;
+	width: 40%;
+	height: 20%;
+	margin-left: 30%;
+	font-family: "titulo";
+	color: white;
+}
+#tituloAcceso{
+	background: linear-gradient(to right,#0947F8,#3773D6);
+	border: 2px solid black;
+	border-radius: 20px;
+	text-align: center;
+	width: 40%;
+	margin:auto; 
+	font-family: "titulo";
+	color: white;
+}
+main{
+	background: linear-gradient(to right,#F70A0A,#F99393);
+	width: 70%;
+	height: auto;
+	overflow: hidden;
+	margin: auto;
+	border:2px solid black;
+}
+#pantalla{
+	
+	width: 70%;
+	margin: 3% 15%;
+	padding-right: 2%; 
+	text-align: right;
+	height: 1em;
+	font-size: 3em;
+	font-family: "Kaushan Script";
+}
+#acceso{
+	background-color: #FA4848;
+	margin:10%;
+	padding: 5% ;
+	
+}
+#alinear{
+	text-align: center;
+	margin-top: 2%;
+}
+#enviar{
+	display: block;
+	margin: auto;
+}
+.posicion{
+	margin: 2% 0%;
+}
+
+#nombre{
+	margin-left: 3.15%;
+}
+
+button{
+	background-color: lightblue;
+	border-radius: 20px;
+	display: inline-block;
+	float: left;
+	width: 20%;
+	height: 3em;
+	margin:3% 2%;
+	font-size: 2em;
+	 font-family: "Kaushan Script";
+
+}
+button:hover{
+	background-color: silver;
+
+}
+@media only screen and (max-width:600px) {
+	#tituloPrincipal{
+		font-size: 1em;
+		margin-top: 50%;
+        font-family: "Kaushan Script";
+	}
+	#tituloAcceso{
+		font-size: 0.8em;
+        font-family: "Kaushan Script";
+	}
+	#acceso{
+	
+	margin-top:70%;
+	padding: 5% ;
+	
+}
+	button{
+		font-size: 1em;
+	}
+
+}
+@media only screen and (max-width:800px) {
+	#tituloPrincipal{
+		
+		margin-top: 35%;
+        font-family: "Kaushan Script";
+	}
+	#tituloAcceso{
+		font-size: 1.5em;
+        font-family: "Kaushan Script";
+	}
+	#acceso{
+	
+	margin-top:35%;
+	padding: 5% ;
+	
+}
+	button{
+		font-size: 1.5em;
+	}
+
+}
+
