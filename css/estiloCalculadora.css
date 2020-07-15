@@ -27,6 +27,18 @@ body{
 	font-family: "titulo";
 	color: white;
 }
+#memo{
+	font-family: "Kaushan Script";
+	color: white;
+	font-size: 2em;
+	
+
+}
+#mem{
+	font-family: "Kaushan Script";
+	font-size: 16px;
+}
+
 main{
 	background: linear-gradient(to right,#F70A0A,#F99393);
 	width: 70%;
@@ -68,9 +80,9 @@ main{
 }
 
 button{
+	
 	background-color: lightblue;
 	border-radius: 20px;
-	display: inline-block;
 	float: left;
 	width: 20%;
 	height: 3em;
