@@ -237,11 +237,24 @@
  }
 
  function resultado() {
- 	operandoString = document.getElementById("pantalla").getAttribute("value");
+	var b = document.getElementById("pantalla").getAttribute("value");
+	//va a se un valor seguro eliminando algun signo que pueda hacer fallar el eval
+	if (b.slice(-1) == "*" || b.slice(-1) == "/" || b.slice(-1) == "+" || b.slice(-1) == "-" || b.slice(-1) == ".") {
+		//me quedo con el valor seguro eliminando el signo
+		operandoString = b.slice(0, -1);
+		//lo evalue 
+		document.getElementById("pantalla").setAttribute("value", eval(operandoString));
+		signo = false;
+ 		decimal = false;
+		 contador = 0;
+	}else{
+		operandoString = document.getElementById("pantalla").getAttribute("value");
  	document.getElementById("pantalla").setAttribute("value", eval(operandoString));
  	signo = false;
  	decimal = false;
  	contador = 0;
+	}
+ 	
 
  }
 
